@@ -7,45 +7,39 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
 </head>
 <body>
-
-    <style>
-        .image-container {
-      width: 100%;
-      height: 100vh; /* Ajusta la altura según tus necesidades */
-      background-image: url('assets/images/vitan.jpg');
-      background-size: cover;
-      background-position: center;
-    }
-
-    </style>
     
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Vitan</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline mt-2 mt-md-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
-  </header>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand align-items-left" href="#">
+          <img src="assets/images/logo.png" alt="Logo" style="width: 40px; height: 40px;">
+        </a>
+        <div class="container">          
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
+            <ul class="navbar-nav">
+              <li class="nav-item mr-4">
+                <a class="nav-link" href="#que-es-vitan">¿Quiénes somos?</a>
+              </li>
+              <li class="nav-item mr-4">
+                <a class="nav-link" href="#tipos-de-seguros">Tipos de Seguros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#nuestros-aliados">Nuestros Aliados</a>
+              </li>
+
+              <li class="nav-item ml-4">
+                <a class="nav-link" href="#contactanos">Contáctanos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
 
   <main role="main">
 
@@ -53,10 +47,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-  <div class="image-container"></div>
+  <div class="image-container" style="background-image: url('/assets/images/vitan.jpg');"></div>
 
-  <hr>
+  <hr class="featurette-divider" style="border-color: #0e254e;">
 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center" id="que-es-vitan">
+        <h1 class="display-1">¿Qué es Vitan?</h1>
+        <br>
+        <p class ="lead" style="font-size: 1.4rem; color: #000000; font-weight: 350;">Vitan Insurance Agency es una agencia de seguros ubicada en Caracas, Venezuela. Trabajamos en conjunto con Yoly Sánchez y estamos autorizados por la Superintendencia de la Actividad Aseguradora (SUDEASEG) bajo el código CS-10588. Con más de 30 años de experiencia en el mercado asegurador, ofrecemos una amplia variedad de productos diseñados para brindar seguridad y tranquilidad a los venezolanos, protegiendo su patrimonio en situaciones de gastos médicos mayores y emergencias. Nuestra oferta incluye seguros de salud, vida y viajes. En Vitan Insurance Agency nos comprometemos con la excelencia en el servicio al cliente, tratando a cada asegurado como un cliente VIP.</p>
+      </div>
+    </div>
+  </div>
 
     <!-- Marketing messaging and featurettes
       ================================================== -->
@@ -64,67 +67,234 @@
 
       <div class="container marketing">
 
-        <!-- Three columns of text below the carousel -->
-  <div class="row text-center">
-    <div class="col-lg-4">
-      <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-      <h2>Heading</h2>
-      <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-      <h2>Heading</h2>
-      <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-    <div class="col-lg-4">
-      <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-      <h2>Heading</h2>
-      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-    </div><!-- /.col-lg-4 -->
-  </div><!-- /.row -->
-
         <!-- START THE FEATURETTES -->
 
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        <hr class="featurette-divider" style="border-color: #0e254e;">
+        
+        <div class="row featurette section-background">
+          <div class="col-md-7 d-flex align-items-center">
+            <div>
+              <h2 class="featurette-heading" style="text-align: center; font-size: 40px; color: #0e254e">Protección integral para ti y tus posesiones</h2>
+              <br>
+              <p class="lead" style="text-align: center; font-size: 22px">
+                En Vitan, te ofrecemos más que seguros. Contamos con un equipo dedicado a entender tus necesidades y anticiparlas. Nuestra seguridad a medida se ajusta a tu estilo de vida y bolsillo, protegiendo no solo tus cosas, sino también tu tranquilidad y tus sueños.
+              </p>
+            </div>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="assets/images/family.jpg" alt="Imagen de una familia feliz">
           </div>
         </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7 order-md-2">
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        
+        <div class="row featurette section-background">
+          <div class="col-md-7 order-md-2 d-flex align-items-center">
+            <div>
+              <h2 class="featurette-heading" style="text-align: center; font-size: 40px; color: #0e254e">Asesoramiento personalizado y anticipado</h2>
+              <br>
+              <p class="lead" style="text-align: center; font-size: 22px">
+                En Vitan, no solo vendemos pólizas, brindamos un servicio excepcional. Nuestros asesores personales conocen y anticipan tus necesidades, ofreciéndote seguridad a medida. 
+                Estamos aquí para protegerte en todo momento y asegurarnos de que tus sueños estén siempre respaldados.
+              </p>
+            </div>
           </div>
           <div class="col-md-5 order-md-1">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="assets/images/olds.jpg" alt="Imagen de una pareja de ancianos sonriendo">
           </div>
         </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-          <div class="col-md-7">
-            <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+        
+        
+        <div class="row featurette section-background">
+          <div class="col-md-7 d-flex align-items-center">
+            <div>
+              <h2 class="featurette-heading" style="text-align: center; font-size: 40px; color: #0e254e">Confianza y respaldo en tu viaje de vida</h2>
+              <br>
+              <p class="lead" style="text-align: center; font-size: 22px">
+                En Vitan, creemos que mereces más que un seguro. Te ofrecemos confianza y respaldo en cada instante de tu vida. 
+                
+                Estaremos aquí para proteger lo que más valoras: tú, tu familia y tus sueños. Nuestro compromiso es ser tu confidente en el viaje, brindándote seguridad en todos los aspectos.
+              </p>
+            </div>
           </div>
           <div class="col-md-5">
-            <img class="featurette-image img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            <img class="featurette-image img-fluid mx-auto" src="assets/images/insurance.jpg" alt="Imagen de un seguro de vida">
           </div>
         </div>
 
-        <hr class="featurette-divider">
+        <br>
+        
+        <hr class="featurette-divider" style="border-color: #0e254e;">
+
+        <br>
+
+        <div class="row text-center mb-3 " id="tipos-de-seguros">
+          <div class="col-lg-12">
+            <h1 class="display-1">Tipos de Seguros</h1>
+          </div><!-- /.col-lg-12 -->
+        </div><!-- /.row -->
+
+    <br>
+    <br>
+    <br>
+        <!-- Three columns of text below the carousel -->
+<div class="row text-center mb-3 circle-line right">
+  <div class="col-lg-4">
+    <img class="rounded-circle mb-3 shadow" src="assets/images/vida.jpg" alt="Generic placeholder image" width="140" height="140">
+    <h2>Vida</h2>
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <img class="rounded-circle mb-3 shadow" src="assets/images/salud.jpg" alt="Generic placeholder image" width="140" height="140">
+    <h2>Salud</h2>
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <img class="rounded-circle mb-3 shadow" src="assets/images/patrimonio.jpg" alt="Generic placeholder image" width="140" height="140">
+    <h2>Patrimonio</h2>
+  </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
+<div class="row text-center justify-content-center mt-3 circle-line-2 left">
+  <div class="col-lg-4">
+    <img class="rounded-circle mb-3 shadow" src="assets/images/viaje.jpg" alt="Generic placeholder image" width="140" height="140">
+    <h2>Viaje</h2>
+  </div><!-- /.col-lg-4 -->
+  <div class="col-lg-4">
+    <img class="rounded-circle mb-3 shadow" src="assets/images/fianza.jpg" alt="Generic placeholder image" width="140" height="140">
+    <h2>Fianza</h2>
+  </div><!-- /.col-lg-4 -->
+</div><!-- /.row -->
+
+<br>
+
+<hr class="featurette-divider" style="border-color: #0e254e;">
+
+
+<br>
+<br>
+
+<div class="row text-center mb-3" id="nuestros-aliados">
+  <div class="col-lg-12">
+    <h1 class="display-1">Nuestros Aliados</h1>
+  </div><!-- /.col-lg-12 -->
+</div><!-- /.row -->
+
+<div class="row ">
+  <div class="col-lg-12 section-background" style="padding: 0;">
+    <div style="position: relative;">
+      <img src="assets/images/aliados.jpg" alt="Imagen de fondo" style="width: 100%; height: auto; object-fit: cover;">
+      <div class="container" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+        <!-- Contenido adicional para la sección "Nuestros Aliados" -->
+        <!-- Agrega aquí el contenido que deseas mostrar sobre la imagen de fondo -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="featurette-divider" style="border-color: #0e254e;">
+
+<br>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+<div class="row text-center mb-3" id="contactanos">
+  <div class="col-lg-12">
+    <h5 class="display-1">Contáctanos</h5>
+  </div><!-- /.col-lg-12 -->
+</div><!-- /.row -->
+
+<br>
+
+<form class="needs-validation" novalidate>
+  <div class="row g-3">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="firstName" style="color: #000; font-weight: bold;">Nombre</label>
+        <input type="text" class="form-control" id="firstName" placeholder="" value="" required style="border-color: #007bff;">
+        <div class="invalid-feedback">
+          Valid first name is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label for="lastName" style="color: #000; font-weight: bold;">Apellido</label>
+        <input type="text" class="form-control" id="lastName" placeholder="" value="" required style="border-color: #007bff;">
+        <div class="invalid-feedback">
+          Valid last name is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="form-group">
+        <label for="phoneNumber" style="color: #000; font-weight: bold;">Número telefónico</label>
+        <input type="text" class="form-control" id="phoneNumber" placeholder="" required style="border-color: #007bff;">
+        <div class="invalid-feedback">
+          Phone number is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="form-group">
+        <label for="email" style="color: #000; font-weight: bold;">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" placeholder="" required style="border-color: #007bff;">
+        <div class="invalid-feedback">
+          Valid email address is required.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="form-group">
+        <label for="howDidYouHear" style="color: #000; font-weight: bold;">¿Cómo se enteró de nosotros?</label>
+        <select class="form-select" id="howDidYouHear" required style="border-color: #007bff;">
+          <option value="">Seleccionar...</option>
+          <option>Instagram</option>
+          <option>Tiktok</option>
+          <option>Linkedin</option>
+          <option>Persona cercana</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select an option.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="form-group">
+        <label for="requestInfo" style="color: #000; font-weight: bold;">Solicitar información de:</label>
+        <select class="form-select" id="requestInfo" required style="border-color: #007bff;">
+          <option value="">Seleccionar...</option>
+          <option>Información general</option>
+          <option>Seguro de Salud</option>
+          <option>Seguro de vida</option>
+          <option>Seguro patrimonial</option>
+          <option>Seguro de Viaje</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select an option.
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <div class="form-group">
+        <label for="requestDetails" style="color: #000; font-weight: bold;">Detalle de la solicitud (opcional)</label>
+        <textarea class="form-control" id="requestDetails" rows="4" required style="border-color: #007bff;"></textarea>
+        <div class="invalid-feedback">
+          Request details are required.
+        </div>
+      </div>
+    </div>
+  </div>
+</form>
+
+<div class="d-flex justify-content-center">
+  <button type="submit" class="btn btn-primary">Enviar</button>
+</div>
+
+<br>
+
+<hr class="featurette-divider" style="border-color: #0e254e;">
 
         <!-- /END THE FEATURETTES -->
 
@@ -133,9 +303,43 @@
 
       <!-- FOOTER -->
       <footer class="container">
-        <p class="float-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p class="float-right"><a href="#">Volver al inicio</a></p>
+        <p>&copy; 2023-2024 Vitan Insurance Agency
       </footer>
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script>
+        // Función para activar la animación de fade-in al hacer scroll
+        function activateFadeInAnimation() {
+          const elements = document.querySelectorAll('.fade-in-scroll');
+          elements.forEach((element) => {
+            if (isElementInViewport(element)) {
+              element.classList.add('fade-in');
+            }
+          });
+        }
+  
+        // Función para verificar si un elemento está en el viewport
+        function isElementInViewport(element) {
+          const rect = element.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+  
+        // Evento de scroll para activar la animación de fade-in
+        window.addEventListener('scroll', activateFadeInAnimation);
+  
+        // Activar animación de fade-in al cargar la página
+        activateFadeInAnimation();
+      </script>
+
   </main>
+  
 </body>
 </html>
